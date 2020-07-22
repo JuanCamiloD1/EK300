@@ -1,9 +1,12 @@
 const Discord = require("discord.js");
-module.exports = (client, message, args) => {  
+module.exports = (client, message, args) => { 
+    var server = message.guild; 
     const embed = new Discord.RichEmbed()
     .setColor("RANDOM")
     .setTitle("Ayuda")
     .setDescription("Comandos disponibles:")
+    .setThumbnail(server.iconURL)
+    .setAuthor(server.name, server.iconURL)
     .addField("Prefix:","EK")
     .addField("8ball:", "juego de pregutas")
     .addField("beer:", "dar una cerveza a alguien")
