@@ -13,7 +13,7 @@ let perms = message.member.hasPermission("MANAGE_GUILD");
     .setDescription(anuncio) //El anuncio
     .setColor("RANDOM")
     .setTimestamp()
-  client.channels.get('735233291333927022').send(embed); //Enviamos el embed (anuncio) a un canal por ID
+  client.channels.get('734897662633050212').send(embed); //Enviamos el embed (anuncio) a un canal por ID
   //client.channels.get('735233291333927022').send('| |') //Para que mencione a los miembros con un everyone
   message.channel.send(':incoming_envelope:| Mensaje Enviado') //Mensaje que envia al canal donde se ejecuto el comando
 }

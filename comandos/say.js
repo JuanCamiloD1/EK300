@@ -16,7 +16,7 @@ if (message.deletable) message.delete();
                 .setAuthor(message.author.username, message.author.displayAvatarURL);
 
             message.channel.send(embed);
-            client.channels.get('735233291333927022').send(embed); //Enviamos el embed (anuncio) a un canal por ID
+            client.channels.get('734864394533470244').send(embed); //Enviamos el embed (anuncio) a un canal por ID
         } else {
             message.channel.send(':incoming_envelope:| Mensaje Enviado' ,args.join(" "));
         }
