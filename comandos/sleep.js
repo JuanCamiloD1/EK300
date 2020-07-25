@@ -14,17 +14,10 @@ let user = message.mentions.members.first()
 if (!pr) {
   const embed = new Discord.RichEmbed()
 
-  .setDescription(`<@${message.author.id}> Se va a momir :sleeping: :sleeping_accommodation: :zzz:`)
+  .setDescription(`A momir :sleeping: :sleeping_accommodation: :zzz:`)
   .setImage(cap)
   .setColor("RANDOM");
   message.channel.send(embed);
-} else {  
-const embed = new Discord.RichEmbed()
-
-.setDescription(`<@${message.author.id}> se va a momir junto a <@${user.id}> :sleeping: :sleeping_accommodation: :zzz:`)
-.setImage(cap)
-.setColor("RANDOM");
-message.channel.send(embed);
-}   
+} 
 
   }

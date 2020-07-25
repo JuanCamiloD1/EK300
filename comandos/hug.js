@@ -9,11 +9,16 @@ let cap = gifs[Math.floor(gifs.length * Math.random())];
 let pr = message.mentions.users.first();
 let user = message.mentions.members.first()
 if (!pr) {
-message.reply("Debes mencionar a alguien OwO");
+  const embed = new Discord.RichEmbed()
+
+  .setDescription(`Sending Hug ● ● ● <@${message.author.id}> `)
+  .setImage(cap)
+  .setColor("RANDOM");
+  message.channel.send(embed);
 } else {  
 const embed = new Discord.RichEmbed()
 
-.setDescription(`<@${message.author.id}> abrazó a <@${user.id}> :blush:`)
+.setDescription(`<@${message.author.id}> Sending Hug ● ● ● <@${user.id}>`)
 .setImage(cap)
 .setColor("RANDOM");
 message.channel.send(embed);

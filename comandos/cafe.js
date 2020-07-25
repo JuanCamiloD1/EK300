@@ -16,14 +16,14 @@ let user = message.mentions.members.first()
 if (!pr) {
   const embed = new Discord.RichEmbed()
 
-  .setDescription(`Solo ? ;-;, te mando un café a ti :coffee:`)
+  .setDescription(`¡El café está aquí! <@${message.author.id}> :coffee:`)
   .setImage(cap)
   .setColor("RANDOM");
   message.channel.send(embed);
 } else {  
 const embed = new Discord.RichEmbed()
 
-.setDescription(`<@${message.author.id}> le envió un café a <@${user.id}> :coffee:`)
+.setDescription(`¡El café está aquí! <@${user.id}> :coffee:`)
 .setImage(cap)
 .setColor("RANDOM");
 message.channel.send(embed);
