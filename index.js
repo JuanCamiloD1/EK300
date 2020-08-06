@@ -1,3 +1,5 @@
+const ytdl = require('ytdl-core');
+const search = require('youtube-search');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 // El modulo fs se utiliza para leer los archivos y carpetas de un directorio:
@@ -67,3 +69,4 @@ client.login(client.config.token) //agregamos las promesas de la propiedad login
   console.error("Error al iniciar sesión: " + err);
 
 });
+    
